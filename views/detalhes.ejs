@@ -1,0 +1,37 @@
+<%-include('partials/header.ejs'); %> 
+<body>
+
+    <%-include('partials/navbar.ejs'); %>
+
+    <div class="container">
+      
+        <div class="card mb-4">
+            <div class="card-header">
+                <h3>ID da pergunta: <%=cadastro.id%></h3>
+               
+            </div>
+            <div class="card-body">
+
+                <h5>Nome: <%=cadastro.nome%></h5>
+                <h5>Sobrenome: <%=cadastro.sobrenome%></h5>
+                <h5>Descricão: <%=cadastro.descricao%></h5>
+                <h5>Criado em: <%=cadastro.createdAt%></h5>
+                <h5>Atualizado em: <%=cadastro.updatedAt%></h5>
+    
+            </div>
+
+            <a class="btn btn-dark m-auto" href="/admin/editar">Editar</a>
+        </div>
+       
+        
+    </div>
+
+    
+
+  
+       
+  
+
+   
+</body>
+<%-include('partials/footer.ejs'); %>

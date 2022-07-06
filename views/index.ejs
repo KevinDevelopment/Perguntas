@@ -1,0 +1,44 @@
+<%-include('partials/header.ejs'); %>
+<body>
+
+    <%-include('partials/navbar'); %>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="card-header">
+                <h2>cadastro de sugestões</h2>
+            </div>
+
+            <div class="card-body">
+                <form method="post" action="/admin/save" class="row g-3">
+
+                    <div class="col-md-6">
+                        <input type="text" name="nome" placeholder="Nome" class="form-control">
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="text" name="sobrenome" placeholder="Sobrenome" class="form-control">
+                    </div>
+
+                    <div class="col-md-12">
+                        <textarea name="descricao" id="" cols="30" rows="5" placeholder="Deixe sua sugestão aqui"
+                            class="form-control"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-info mt-3">Teste</button>
+                </form>
+                
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+<%-include('partials/footer.ejs'); %>
+
